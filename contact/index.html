@@ -12,7 +12,7 @@
   </head>
   
   <body>
-  
+<script src="../script/script.js"></script>
 
  <!-- Navigation -->
 <div class="container">
@@ -52,24 +52,27 @@
 </div>	
 
 <!-- get in touch section -->	
-<form>
+<form id="form" onsubmit="return message()" style="visibility:show">
 	<div class="mb-3">
 	<label class="form-label">Your Name</label>
-		<input type="email" class="form-control" placeholder="forename surname">
+		<input type="text" id="name" class="form-control" placeholder="forename surname">
 	</div>
 	<div class="mb-3">
 	<label class="form-label">Email address</label>
-		<input type="email" class="form-control" placeholder="name@example.com">
+		<input type="email" id="email" class="form-control" placeholder="name@example.com">
 	</div>
 	<div class="mb-3">
 	<label class="form-label">Your Message</label>
 		<textarea class="form-control"  rows="3"></textarea>
 	</div>
 	<div class="col-12">
-		<button class="btn btn-secondary" type="submit">Submit form</button>
+		<button class="btn btn-secondary" type="submit" value="submit">Submit form</button>
 	</div>
 </form>
 
+<div id="div1">
+	<h3 id="text" onsubmit="return text()"></h3>
+</div>
 
 <!-- Contact Details -->	
 <div  class="row">
@@ -92,5 +95,6 @@
 	</div>
 </div>
 </div>	
+  
 </body>
 </html>
